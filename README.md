@@ -3,3 +3,5 @@
 This repository contains the code samples for the AWS Blog published under the ML Industries category under the healthcare domain.
 
 1. The code [**util.py**](https://github.com/pratyushchry/Enabling-efficient-patient-care-using-Amazon-AI-services/blob/master/util.py) Python Module is a layer to be added to the Lambda Function to create Medical Resume and then save the medical record to the table.
+2. Head over to inside the [**transcription_function.py**](https://github.com/pratyushchry/Enabling-efficient-patient-care-using-Amazon-AI-services/tree/master/transcription-job-function) **transcription-job-function** folder. It contains the code for the Lambda Function to initiate the Transcription Job.
+3. Head over to [**resume_lambda_function.py**](https://github.com/pratyushchry/Enabling-efficient-patient-care-using-Amazon-AI-services/tree/master/resume-gen) inside the **resume-gen** folder. It contains the code for the Lambda Function which gets triggered through the CloudWatch event once the transcription job is completed. You again need to attach a role to it giving it access to Amazon S3, Transcribe, DynamoDB, and Amazon Comprehend Medical. 
