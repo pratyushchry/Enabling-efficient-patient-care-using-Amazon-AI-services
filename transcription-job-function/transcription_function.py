@@ -18,3 +18,5 @@ def lambda_handler(event, context):
                                         LanguageCode = "en-US",
                                         OutputBucketName = "comprehend-medical-transcription-job"
                                         )
+                                        
+    
